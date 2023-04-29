@@ -1,0 +1,122 @@
+
+html{
+  color: black;
+  text-align: start;
+  background-image: url(aboutme.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+    text-align: center;
+}
+
+hr{
+    border: 10 bold black;
+    margin: 10px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: relative;
+    margin: 10px;
+}
+#navbar::before{
+    content: "";
+    background-color: #003366;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/* navigation bar: Logo and Image  */
+  #logo img {
+    height: 170px;
+    /* margin: 1px 2px; */
+  }
+  
+  /* navigation bar: List Styling  */
+  #navbar ul {
+    display: flex;
+    font-family: "Bree Serif", serif;
+  }
+  #navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  #navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  #navbar ul li a:hover {
+    color: navy;
+    background-color: gray;
+  }
+
+  #aboutme{
+    color: black;
+    text-align: start;
+    background-image: url(aboutme.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #education{
+    color: black;
+    text-align: start;
+    text-decoration: none;
+  }
+  #contactme img{
+    margin: 10px;
+    width: 130px;
+    align-items: center;
+  }
+#workexperience{
+  margin-bottom: 20px;
+  text-align: start;
+}
+#contactme{
+  width: 20px;
+  text-align: start;
+  margin: 10px;
+}
+
+/* for desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-bottom: 20px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px){
+  .whatsapp-icon{
+      margin-top: 10px;
+  }
+
+  .whatsapp_float{
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+  }
+}
